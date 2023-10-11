@@ -662,6 +662,12 @@ static void display(void)
     tree();
     glPopMatrix();
 
+    //tree pool
+    glPushMatrix();
+    glTranslated(-48,0,5);
+    tree();
+    glPopMatrix();
+
     //tree 4
     glPushMatrix();
     glTranslated(-45,0,30);
@@ -747,6 +753,13 @@ static void display(void)
     glTranslated(-8,0,5);
     electricalTower();
     glPopMatrix();
+
+    //left electricalTower
+    glPushMatrix();
+    glTranslated(-8,0,45);
+    electricalTower();
+    glPopMatrix();
+
 
     //left chair
     glPushMatrix();

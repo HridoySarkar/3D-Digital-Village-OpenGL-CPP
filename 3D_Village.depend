@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1697038398 source:c:\users\hridoy\desktop\3d_village\main.cpp
+1697042098 source:c:\users\hridoy\desktop\3d_village\main.cpp
 	<iostream>
 	<GL/gl.h>
 	<GLUT/glut.h>
