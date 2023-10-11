@@ -363,6 +363,211 @@ void pool(){
 };
 
 
+void car(){
+
+    //body
+    glPushMatrix();
+    glTranslated(1.4,2,12);
+    glScaled(4,2,8);
+    cube(0.1,0.3,0.1);
+    glPopMatrix();
+
+    //top
+    glPushMatrix();
+    glTranslated(1.4,4,13);
+    glScaled(4,2,5);
+    cube(0.2,1.1,0.9);
+    glPopMatrix();
+
+    //head left light
+    glPushMatrix();
+    glTranslated(1.6,2.8,20);
+    glScaled(0.8,0.8,0.2);
+    cube(1.0,1.0,1.0);
+    glPopMatrix();
+
+    //head right light
+    glPushMatrix();
+    glTranslated(4.4,2.8,20);
+    glScaled(0.8,0.8,0.2);
+    cube(1.0,1.0,1.0);
+    glPopMatrix();
+
+}
+
+
+void tree(){
+
+    //tree body
+    glPushMatrix();
+    glTranslated(-0.4,0,0);
+    glScaled(1,15,1);
+    cube(0.522,0.369,0.259);
+    glPopMatrix();
+
+    //leaf
+    glPushMatrix();
+    glTranslated(0,14.5,0);
+    glRotated(45.0,0,0,1);
+    glScaled(0.5,6,0.5);
+    cube(0.208,0.443,0.024);
+    glPopMatrix();
+
+    //leaf
+    glPushMatrix();
+    glTranslated(0,14.5,0);
+    glRotated(-45.0,0,0,1);
+    glScaled(0.5,6,0.5);
+    cube(0.208,0.443,0.024);
+    glPopMatrix();
+
+
+    //leaf
+    glPushMatrix();
+    glTranslated(0,14.5,0);
+    glRotated(90.0,0,0,1);
+    glScaled(0.5,6,0.5);
+    cube(0.208,0.443,0.024);
+    glPopMatrix();
+
+    //leaf
+    glPushMatrix();
+    glTranslated(0,14.5,0);
+    glRotated(-90.0,0,0,1);
+    glScaled(0.5,6,0.5);
+    cube(0.208,0.443,0.024);
+    glPopMatrix();
+
+
+    //leaf
+    glPushMatrix();
+    glTranslated(0,14.5,0);
+    glRotated(120.0,0,0,1);
+    glScaled(0.5,6,0.5);
+    cube(0.208,0.443,0.024);
+    glPopMatrix();
+
+    //leaf
+    glPushMatrix();
+    glTranslated(0,14.5,0);
+    glRotated(-120.0,0,0,1);
+    glScaled(0.5,6,0.5);
+    cube(0.208,0.443,0.024);
+    glPopMatrix();
+
+
+    //leaf
+    glPushMatrix();
+    glTranslated(0,14.5,0);
+    glScaled(0.5,6,0.5);
+    cube(0.208,0.443,0.024);
+    glPopMatrix();
+
+
+
+
+
+
+
+
+
+    //leaf
+    glPushMatrix();
+    glTranslated(0,14.5,0.5);
+    glRotated(45.0,1,1,0);
+    glScaled(0.5,6,0.5);
+    cube(0.208,0.443,0.024);
+    glPopMatrix();
+
+    //leaf
+    glPushMatrix();
+    glTranslated(0,14.5,0.5);
+    glRotated(-45.0,1,1,0);
+    glScaled(0.5,6,0.5);
+    cube(0.208,0.443,0.024);
+    glPopMatrix();
+
+
+    //leaf
+    glPushMatrix();
+    glTranslated(0,14.5,0.5);
+    glRotated(90.0,1,1,0);
+    glScaled(0.5,6,0.5);
+    cube(0.208,0.443,0.024);
+    glPopMatrix();
+
+    //leaf
+    glPushMatrix();
+    glTranslated(0,14.5,0.5);
+    glRotated(-90.0,1,1,0);
+    glScaled(0.5,6,0.5);
+    cube(0.208,0.443,0.024);
+    glPopMatrix();
+
+
+    //leaf
+    glPushMatrix();
+    glTranslated(0,14.5,0.5);
+    glRotated(120.0,1,1,0);
+    glScaled(0.5,6,0.5);
+    cube(0.208,0.443,0.024);
+    glPopMatrix();
+
+    //leaf
+    glPushMatrix();
+    glTranslated(0,14.5,0.5);
+    glRotated(-120.0,1,1,0);
+    glScaled(0.5,6,0.5);
+    cube(0.208,0.443,0.024);
+    glPopMatrix();
+
+
+    //leaf
+    glPushMatrix();
+    glTranslated(0,14.5,0.5);
+    glScaled(0.5,6,0.5);
+    cube(0.208,0.443,0.024);
+    glPopMatrix();
+
+}
+
+
+void playGround(){
+
+    //field
+    glPushMatrix();
+    glTranslated(0,0.3,0);
+    glScaled(30,1,15);
+    cube(0.937,0.961,0.514);
+    glPopMatrix();
+
+}
+
+
+void goalbar(){
+
+    glPushMatrix();
+    glScaled(0.4,8,0.4);
+    cube(1.0,1.0,1.0);
+    glPopMatrix();
+
+
+    glPushMatrix();
+    glTranslated(0,0,5);
+    glScaled(0.4,8,0.4);
+    cube(1.0,1.0,1.0);
+    glPopMatrix();
+
+
+    glPushMatrix();
+    glTranslated(0,8,0);
+    glScaled(0.4,0.4,5.3);
+    cube(1.0,1.0,1.0);
+    glPopMatrix();
+
+}
+
+
 
 
 
@@ -392,6 +597,94 @@ static void display(void)
     //road
     roadMap1();
 
+
+    //playground
+    glPushMatrix();
+    glTranslated(-45,0,35);
+    playGround();
+    glPopMatrix();
+
+
+    //goal bar left side
+    glPushMatrix();
+    glTranslated(-45.5,0,40);
+    goalbar();
+    glPopMatrix();
+
+    //goal bar right side
+    glPushMatrix();
+    glTranslated(-15,0,40);
+    goalbar();
+    glPopMatrix();
+
+
+
+
+    //tree 1
+    glPushMatrix();
+    glTranslated(15,0,30);
+    tree();
+    glPopMatrix();
+
+    //tree 2
+    glPushMatrix();
+    glTranslated(25,0,30);
+    tree();
+    glPopMatrix();
+
+    //tree 3
+    glPushMatrix();
+    glTranslated(35,0,30);
+    tree();
+    glPopMatrix();
+
+
+    //tree 4
+    glPushMatrix();
+    glTranslated(45,0,30);
+    tree();
+    glPopMatrix();
+
+
+
+    //tree pool
+    glPushMatrix();
+    glTranslated(47,0,3);
+    tree();
+    glPopMatrix();
+
+
+    // left house trees
+
+    //tree 1
+    glPushMatrix();
+    glTranslated(-15,0,30);
+    tree();
+    glPopMatrix();
+
+    //tree 4
+    glPushMatrix();
+    glTranslated(-45,0,30);
+    tree();
+    glPopMatrix();
+
+
+
+
+
+
+    //car
+    glPushMatrix();
+    car();
+    glPopMatrix();
+
+
+
+    //2nd car
+    glPushMatrix();
+    glTranslated(-6.5,0,16);
+    car();
+    glPopMatrix();
 
 
     //first house
