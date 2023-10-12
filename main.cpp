@@ -396,6 +396,145 @@ void car(){
 }
 
 
+void school(){
+    //school body 1st floor
+    glPushMatrix();
+    glScaled(30,10,10);
+    cube(0.98,0.976,0.965);
+    glPopMatrix();
+
+    //door left
+    glPushMatrix();
+    glTranslated(-0.5,0,5);
+    glScaled(1,8,2.5);
+    cube(0.753,0.753,0.753);
+    glPopMatrix();
+
+
+    //half floor
+    glPushMatrix();
+    glTranslated(-1,10,-1);
+    glScaled(32,1,12);
+    cube(0.588,0.294,0.);
+    glPopMatrix();
+
+    //2nd floor
+    glPushMatrix();
+    glTranslated(0,10,0);
+    glScaled(30,10,10);
+    cube(0.98,0.976,0.965);
+    glPopMatrix();
+
+    //roof top
+    glPushMatrix();
+    glTranslated(-1,18.8,-1);
+    glScaled(32,1,12);
+    cube(0.588,0.294,0.);
+    glPopMatrix();
+
+    //roof top side walls back
+    glPushMatrix();
+    glTranslated(-1,18.8,-1);
+    glScaled(32,5,1);
+    cube(0.588,0.294,0.);
+    glPopMatrix();
+
+    //roof top side walls front
+    glPushMatrix();
+    glTranslated(-1,18.8,10);
+    glScaled(32,5,1);
+    cube(0.588,0.294,0.);
+    glPopMatrix();
+
+    //roof top side walls left
+    glPushMatrix();
+    glTranslated(-1,18.8,-1);
+    glScaled(1,5,12);
+    cube(0.588,0.294,0.);
+    glPopMatrix();
+
+    //roof top side walls right
+    glPushMatrix();
+    glTranslated(30,18.8,-1);
+    glScaled(1,5,12);
+    cube(0.588,0.294,0.);
+    glPopMatrix();
+
+    //top
+    glPushMatrix();
+    glTranslated(18,20,0);
+    glScaled(8,8,5);
+    cube(0.753,0.753,0.753);
+    glPopMatrix();
+
+    //top door
+    glPushMatrix();
+    glTranslated(20,20,3.1);
+    glScaled(3,6,2);
+    cube(0.0,0.0,1.0);
+    glPopMatrix();
+
+
+    //1st floor front window 1
+    glPushMatrix();
+    glTranslated(2.5,3,9.5);
+    glScaled(4,5,1);
+    cube(0.588,0.294,0.);
+    glPopMatrix();
+
+    //1st floor front window 2
+    glPushMatrix();
+    glTranslated(22,3,9.5);
+    glScaled(4,5,1);
+    cube(0.588,0.294,0.);
+    glPopMatrix();
+    //1st floor front window 3
+    glPushMatrix();
+    glTranslated(12,3,9.5);
+    glScaled(4,5,1);
+    cube(0.588,0.294,0.);
+    glPopMatrix();
+
+
+
+    //2nd floor front window 1
+    glPushMatrix();
+    glTranslated(2.5,12,9.5);
+    glScaled(4,5,1);
+    cube(0.588,0.294,0.);
+    glPopMatrix();
+
+    //2nd floor front window 2
+    glPushMatrix();
+    glTranslated(22,12,9.5);
+    glScaled(4,5,1);
+    cube(0.588,0.294,0.);
+    glPopMatrix();
+    //2nd floor front window 3
+    glPushMatrix();
+    glTranslated(12,12,9.5);
+    glScaled(4,5,1);
+    cube(0.588,0.294,0.);
+    glPopMatrix();
+
+
+    //2nd floor window left
+    glPushMatrix();
+    glTranslated(-0.5,12,4);
+    glScaled(1,5,4);
+    cube(0.588,0.294,0.);
+    glPopMatrix();
+
+
+}
+
+
+
+
+
+
+
+
 void tree(){
 
     //tree body
@@ -615,6 +754,13 @@ static void display(void)
     glPushMatrix();
     glTranslated(-15,0,40);
     goalbar();
+    glPopMatrix();
+
+
+    //school
+    glPushMatrix();
+    glTranslated(15,0,38);
+    school();
     glPopMatrix();
 
 
