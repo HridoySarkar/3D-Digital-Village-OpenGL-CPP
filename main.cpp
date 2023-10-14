@@ -930,37 +930,37 @@ static void key(unsigned char key, int x, int y)
     {
 
     case 'w':
-        eyeY=eyeY+0.1;
+        eyeY=eyeY+0.2;
         break;
     case 's':
-        eyeY=eyeY-0.1;
+        eyeY=eyeY-0.2;
         break;
     case 'd':
-        eyeX=eyeX+0.1;
+        eyeX=eyeX+0.2;
         break;
     case 'a':
-        eyeX=eyeX-0.1;
+        eyeX=eyeX-0.2;
     break;
 
     case 'i':
-        lookY=lookY+0.1;
+        lookY=lookY+0.2;
         break;
     case 'k':
-        lookY=lookY-0.1;
+        lookY=lookY-0.2;
         break;
     case 'j':
-        lookX=lookX+0.1;
+        lookX=lookX+0.2;
         break;
     case 'l':
-        lookX=lookX-0.1;
+        lookX=lookX-0.2;
         break;
 
 
     case '+':
-        eyeZ=eyeZ+0.1;
+        eyeZ=eyeZ+0.2;
         break;
     case '-':
-        eyeZ=eyeZ-0.1;
+        eyeZ=eyeZ-0.2;
         break;
 
     }
